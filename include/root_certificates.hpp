@@ -1,7 +1,7 @@
 // Copyright 2021 ak-kuznetsov <a.kuznetsov2701@mail.ru>
 
-#ifndef INCLUDE_ROOT_CERTIFICATES_HPP
-#define INCLUDE_ROOT_CERTIFICATES_HPP
+#ifndef INCLUDE_ROOT_CERTIFICATES_HPP_
+#define INCLUDE_ROOT_CERTIFICATES_HPP_
 #include <boost/asio/ssl.hpp>
 #include <string>
 
@@ -114,5 +114,5 @@ inline void load_root_certificates(ssl::context& ctx) {
   detail::load_root_certificates(ctx, ec);
   if (ec) throw boost::system::system_error{ec};
 }
-#endif  // INCLUDE_ROOT_CERTIFICATES_HPP
+#endif  // INCLUDE_ROOT_CERTIFICATES_HPP_
 

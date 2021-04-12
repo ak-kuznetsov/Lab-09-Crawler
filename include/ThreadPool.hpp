@@ -1,7 +1,7 @@
 // Copyright 2021 ak-kuznetsov <a.kuznetsov2701@mail.ru>
 
-#ifndef INCLUDE_POOL_HPP
-#define INCLUDE_POOL_HPP
+#ifndef INCLUDE_POOL_HPP_
+#define INCLUDE_POOL_HPP_
 #include <condition_variable>
 #include <functional>
 #include <future>
@@ -86,5 +86,5 @@ inline ThreadPool::~ThreadPool() {
   for (std::thread& worker : workers) worker.join();
 }
 
-#endif  // INCLUDE_POOL_HPP
+#endif  // INCLUDE_POOL_HPP_
 

@@ -1,7 +1,7 @@
 // Copyright 2021 ak-kuznetsov <a.kuznetsov2701@mail.ru>
 
-#ifndef INCLUDE_DOWNLOADER_HPP
-#define INCLUDE_DOWNLOADER_HPP
+#ifndef INCLUDE_DOWNLOADER_HPP_
+#define INCLUDE_DOWNLOADER_HPP_
 #include <iostream>
 
 #include "Downloader.hpp"
@@ -26,5 +26,5 @@ class Downloader {
   static void DownloadHttps(Page&& _page);
 };
 
-#endif  // INCLUDE_DOWNLOADER_HPP
+#endif  // INCLUDE_DOWNLOADER_HPP_
 

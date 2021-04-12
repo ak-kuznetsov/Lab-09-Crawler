@@ -1,7 +1,7 @@
 // Copyright 2021 ak-kuznetsov <a.kuznetsov2701@mail.ru>
 
-#ifndef INCLUDE_PARSER_HPP
-#define INCLUDE_PARSER_HPP
+#ifndef INCLUDE_PARSER_HPP_
+#define INCLUDE_PARSER_HPP_
 #include <iostream>
 
 #include "Downloader.hpp"
@@ -20,5 +20,5 @@ class Parser {
   inline static Queue<std::string> queue_writer;
 };
 
-#endif  // INCLUDE_PARSER_HPP
+#endif  // INCLUDE_PARSER_HPP_
 
