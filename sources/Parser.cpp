@@ -6,7 +6,7 @@
 #include <regex>
 #include <string>
 
-#include "gumbo.h"
+#include <gumbo.h>
 
 bool isImage(const std::string& url) {
   size_t lastDotPos = url.find_last_of('.');

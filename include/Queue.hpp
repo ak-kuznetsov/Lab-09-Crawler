@@ -1,7 +1,7 @@
 // Copyright 2021 ak-kuznetsov <a.kuznetsov2701@mail.ru>
 
-#ifndef TEMPLATE_QUEUE_HPP
-#define TEMPLATE_QUEUE_HPP
+#ifndef INCLUDE_QUEUE_HPP
+#define INCLUDE_QUEUE_HPP
 
 #include <iostream>
 #include <mutex>
@@ -42,4 +42,5 @@ class Queue {
   std::queue<T> _queue;
 };
 
-#endif  // TEMPLATE_QUEUE_HPP
+#endif  // INCLUDE_QUEUE_HPP
+

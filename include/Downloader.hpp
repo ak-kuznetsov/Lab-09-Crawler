@@ -1,11 +1,12 @@
 // Copyright 2021 ak-kuznetsov <a.kuznetsov2701@mail.ru>
 
-#ifndef TEMPLATE_DOWNLOADER_HPP
-#define TEMPLATE_DOWNLOADER_HPP
+#ifndef INCLUDE_DOWNLOADER_HPP
+#define INCLUDE_DOWNLOADER_HPP
 #include <iostream>
 
 #include "Downloader.hpp"
 #include "Queue.hpp"
+#include <string>
 
 struct Page {
   std::string page;
@@ -16,7 +17,7 @@ struct Page {
 };
 class Downloader {
  public:
-  explicit Downloader() = delete;
+  Downloader() = delete;
   static void DownloadPage();
   inline static Queue<Page> queue_pages;
 
@@ -25,4 +26,5 @@ class Downloader {
   static void DownloadHttps(Page&& _page);
 };
 
-#endif  // TEMPLATE_DOWNLOADER_HPP
+#endif  // INCLUDE_DOWNLOADER_HPP
+

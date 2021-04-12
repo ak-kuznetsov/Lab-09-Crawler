@@ -1,7 +1,7 @@
 // Copyright 2021 ak-kuznetsov <a.kuznetsov2701@mail.ru>
 
-#ifndef THREAD_POOL_H
-#define THREAD_POOL_H
+#ifndef INCLUDE_POOL_HPP
+#define INCLUDE_POOL_HPP
 #include <condition_variable>
 #include <functional>
 #include <future>
@@ -11,10 +11,11 @@
 #include <stdexcept>
 #include <thread>
 #include <vector>
+#include <utility>
 
 class ThreadPool {
  public:
-  ThreadPool(size_t);
+  explicit ThreadPool(size_t);
   template <class F, class... Args>
   auto enqueue(F&& f, Args&&... args)
       -> std::future<typename std::result_of<F(Args...)>::type>;
@@ -85,4 +86,5 @@ inline ThreadPool::~ThreadPool() {
   for (std::thread& worker : workers) worker.join();
 }
 
-#endif  // TEMPLATE_TREADPOOL_H
+#endif  // INCLUDE_POOL_HPP
+
